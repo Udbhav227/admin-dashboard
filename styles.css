@@ -1,0 +1,38 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 15px;
+}
+
+.sidebar {
+  grid-column: 1 / 2;
+  display: grid;
+  grid-row: 1fr 1fr 1fr;
+
+  background-color: aqua;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 15px;
+}
+
+.projects-section-header {
+  grid-column: 1 / 2;
+}
+
+.annoucements-section-header {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.trending-section {
+  grid-column: 2 / 3;
+}
+
+.cards-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
