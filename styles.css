@@ -21,7 +21,8 @@ body {
   grid-template: auto 1fr / 2fr 1fr;
   padding: 0.5rem 2rem;
   gap: 1rem;
-  box-shadow: 0 5px 5px #e0e7ff;
+  box-shadow: 0 5px 5px #ddd6fe;
+  z-index: 1;
 }
 
 .search-container {
@@ -132,6 +133,7 @@ body {
 .btns-container button:active {
   transform: scale(.97);
 }
+
 /* Right Sidebar */
 
 .sidebar {
@@ -190,10 +192,51 @@ body {
 
 .main-content {
   grid-column: 2 / -2;
+  background-color: #f5f3ff;
+  padding-left: 1.5rem;
 }
 
 .cards-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
+}
+
+/* Right Sidebar */
+
+.right-sidebar {
+  grid-area: 2 / 3 / 3 / 4;
+  background-color: #f5f3ff;
+  display: grid;
+  padding: 0 1.5rem;
+}
+
+.annoucements-container-header {
+  font-weight: bold;
+}
+
+.announcement-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: .8rem;
+}
+
+.announcements {
+  padding: .7rem;
+}
+
+.announcements:nth-child(2) {
+  border-bottom: 2px solid #e0e7ff;
+  border-top: 2px solid #e0e7ff;
+}
+
+.announcement-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.announcement-body {
+  margin: 0;
+  color: #4b5563;
+  font-size: .8rem;
 }
