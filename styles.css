@@ -229,8 +229,9 @@ body {
 }
 
 .card .title {
-  font-weight: bold;
-  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 550;
+  margin: 0 0 5px 0;
 }
 
 .card .content {
