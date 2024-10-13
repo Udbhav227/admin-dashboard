@@ -5,6 +5,10 @@
   list-style-type: none;
 }
 
+:root {
+  font-size: calc(0.625rem + 0.4vw);
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -42,7 +46,7 @@ body {
   border-radius: 20px;
   border: none;
   background-color: #e0e7ff;
-  height: 1.7rem;
+  height: 2rem;
   margin-right: 1.7rem;
   padding: 0 1rem;
 }
@@ -128,6 +132,7 @@ body {
   font-size: 1rem;
   font-weight: bold;
   border: none;
+  box-shadow: 0 5px 5px #ddd6fe;
 }
 
 .btns-container button:active {
@@ -205,7 +210,7 @@ body {
 
 .cards-section {
   display: grid;
-  grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
 }
 
@@ -215,6 +220,12 @@ body {
   border-radius: 12px;
   border-left: .75rem solid #166534;
   position: relative;
+  box-shadow: 0 5px 5px #ddd6fe;
+}
+
+.card:hover {
+  transition: 0.4s;
+  transform: scale(1.01);
 }
 
 .card .title {
@@ -259,6 +270,7 @@ body {
   background-color: white;
   border-radius: 12px;
   padding: .8rem;
+  box-shadow: 0 5px 5px #ddd6fe;
 }
 
 .announcements {
